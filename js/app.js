@@ -1,4 +1,5 @@
 (function(window) {
+  'use strict'
 
   /*
    * Create a function named setMyLightGreen
@@ -82,6 +83,10 @@
    * using the Function prototype method: apply
    * to set the context to the correct object
    */
+
+  btn2.addEventListener('click', () =>
+    setMyLightGreen.apply(btn2)
+  );
 
 
   /*
