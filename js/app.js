@@ -278,13 +278,14 @@
      setMyLightClass.bind(this)(event, 'light-green');
    })
 
-
   /*
    * Add a click event listener to btn14
    * the handler method will be a function expression
    * that is the result of invoking the Function prototype method, bind
    * on the setMyLightGreen function
    */
+
+   btn14.addEventListener('click', setMyLightGreen.bind(btn14));
 
 
   /*
